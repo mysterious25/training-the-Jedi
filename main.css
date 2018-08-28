@@ -60,11 +60,7 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .grid-container  {
-      justify-content: left;
-  }
-}
+
 
 @media screen and (min-device-width: 1199px) {
   .grid-container {
@@ -199,4 +195,21 @@ table tr:nth-child(even) {
     font-size: 14px;
     line-height: 1;
     padding-left: 15px; 
+}
+
+@media (max-width: 992px) {
+  .table-border {
+    overflow: scroll;
+  }
+
+  .grid-container  {
+      justify-content: left;
+      overflow: auto;
+  }
+
+  .h1 {
+    font-size: 31px;
+    margin: 30px;
+    font-weight: bold;
+  }
 }
