@@ -47,7 +47,7 @@ body {
 
 }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 992px) {
   .classForiPhoneDisplay {
     font-size: 1.2em;
   }
@@ -197,7 +197,7 @@ table tr:nth-child(even) {
     padding-left: 15px; 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 320px) {
   .table-border {
     overflow: scroll;
   }
@@ -212,4 +212,11 @@ table tr:nth-child(even) {
     margin: 30px;
     font-weight: bold;
   }
+}
+
+@media (max-width: 481px) {
+  .table-border {
+    overflow: scroll;
+  }
+
 }
