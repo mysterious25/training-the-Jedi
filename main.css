@@ -38,6 +38,7 @@ table tr:nth-child(even) {
     padding-bottom: 10px;
     text-align: left;
     padding-top: 50px;
+    position: relative;
 }
 
 #search_input {
@@ -48,4 +49,72 @@ table tr:nth-child(even) {
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
+}
+
+*, *:after, *:before {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: arial;
+    }
+.form-row {
+  margin-bottom: 20px;
+  padding: 4px 0;
+  position: relative; }
+.form-block {
+  border: 1px solid #cccccc;
+  margin-bottom: 8px;
+  padding: 8px 12px; }
+
+.input {
+  
+    background-color: white;
+    -webkit-appearance: none;
+    border: 1px solid #cccccc;
+    font-family: Arial;
+    margin-bottom: 8px;
+    padding: 8px 4px;
+    position: relative;
+    width: 100%;
+    z-index: 3; 
+    border: none;
+        width: 100%;
+    border-bottom: 1px solid black;    
+    
+}
+  
+.input:focus {
+    box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
+    background-color: #fafafa; 
+}
+
+.label-helper {
+  position: absolute;
+  opacity: 0;
+  transition: .2s bottom, .2s opacity;
+  bottom: 0;
+  left: 0;
+  z-index: 1; 
+}
+
+.input:focus + .label-helper, .input:invalid + .label-helper {
+  bottom: 50%;
+  font-family: arial;
+  font-size: 14px;
+  line-height: 1;
+  opacity: 1;
+  padding: 4px; 
+}
+
+.input:invalid {
+  border-left: 10px solid #f00; 
+}
+  
+.input:invalid + .label-helper::after {
+    color: #f00;
+    content: "X";
+    font-family: arial;
+    font-size: 14px;
+    line-height: 1;
+    padding-left: 12px; 
 }
