@@ -44,28 +44,6 @@ table {
 
 body {
     text-align: center;
-
-}
-
-@media screen and (max-device-width: 992px) {
-  .classForiPhoneDisplay {
-    font-size: 1.2em;
-  }
-}
-
-@media screen and (min-device-width: 768px) {
-  .minimumiPadWidth {
-    clear: both;
-    margin-bottom: 2px solid #ccc;
-  }
-}
-
-
-
-@media screen and (min-device-width: 1199px) {
-  .grid-container {
-    margin-bottom: 2px solid #ccc;
-  }
 }
 
 .h1 {
@@ -73,7 +51,6 @@ body {
     margin: 30px;
     font-weight: bold;
 }
-
 
 .grid-container {
   display: grid;
@@ -96,13 +73,13 @@ table {
     padding: 20px;
 }
 
-table, th, td
-{
+table, th, td {
     margin: 10px 0;
     padding: 20px 5px;
     font: 15px Helvetica, sans-serif;
     border-collapse: collapse;
 }
+
 th {
     font-weight:bold;
     padding: 10px 15px;
@@ -135,17 +112,20 @@ table tr:nth-child(even) {
       box-sizing: border-box;
       font-family: arial;
     }
+
 .form-row {
   margin-bottom: 20px;
   padding: 4px 0;
-  position: relative; }
+  position: relative; 
+}
+
 .form-block {
   border: 1px solid #cccccc;
-  margin-bottom: 8px;
-  padding: 8px 12px; }
+  margin-bottom: 10px;
+  padding: 10px 15px; 
+}
 
 .input {
-  
     background-color: #fff;
     -webkit-appearance: none;
     border: 1px solid #ccc;
@@ -156,9 +136,8 @@ table tr:nth-child(even) {
     width: 100%;
     z-index: 3; 
     border: none;
-        width: 100%;
-    border-bottom: 1px solid black;    
-    
+    width: 100%;
+    border-bottom: 1px solid black;
 }
   
 .input:focus {
@@ -220,3 +199,25 @@ table tr:nth-child(even) {
   }
 
 }
+
+@media screen and (max-device-width: 992px) {
+  .classForiPhoneDisplay {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  .minimumiPadWidth {
+    clear: both;
+    margin-bottom: 2px solid #ccc;
+  }
+}
+
+
+
+@media screen and (min-device-width: 1199px) {
+  .grid-container {
+    margin-bottom: 2px solid #ccc;
+  }
+}
+
