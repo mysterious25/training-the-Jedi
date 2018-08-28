@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+
+}
+
+#data-table {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+}
+
+.table-border {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+table, th, td
+{
+    margin: 10px 0;
+    padding: 19px 4px;
+    font: 15px Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+th {
+    font-weight:bold;
+    padding: 10px 15px;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.search {
+    padding-bottom: 10px;
+    text-align: left;
+    padding-top: 50px;
+}
+
+#search_input {
+    padding: 5px 15px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
